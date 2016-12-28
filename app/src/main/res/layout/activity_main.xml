@@ -63,24 +63,25 @@
         android:inputType="phone"
         android:ems="10"
         android:id="@+id/editText4" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
 
-    <RadioButton
-        android:text="Male"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButtonMale" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <RadioButton
-        android:text="Female"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButtonFemale" />
+            <RadioButton
+                android:text="Male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonMale" />
 
-    </LinearLayout>
+            <RadioButton
+                android:text="Female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonFemale" />
+
+        </RadioGroup>
 
     <CheckBox
         android:text="Subscribe Me"
@@ -97,7 +98,9 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner" />
+        android:id="@+id/spinner"
+        android:prompt="chooseCategory"
+        android:entries="category" />
 
     <TextView
         android:layout_width="wrap_content"
