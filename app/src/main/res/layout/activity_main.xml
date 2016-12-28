@@ -99,8 +99,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:prompt="chooseCategory"
-        android:entries="category" />
+        android:prompt="@string/chooseCategory"
+        android:entries="@array/category" />
 
     <TextView
         android:layout_width="wrap_content"
